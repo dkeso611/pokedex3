@@ -193,7 +193,7 @@
 				TargetAttributes = {
 					DE9391A11EC5029300EE3F85 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 543585E4H5;
+						DevelopmentTeam = ZSD4CJD8TN;
 						ProvisioningStyle = Automatic;
 					};
 					DE9391B51EC5029300EE3F85 = {
@@ -417,7 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 543585E4H5;
+				DEVELOPMENT_TEAM = ZSD4CJD8TN;
 				INFOPLIST_FILE = pokedex3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SuruLaye.pokedex3;
@@ -430,7 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 543585E4H5;
+				DEVELOPMENT_TEAM = ZSD4CJD8TN;
 				INFOPLIST_FILE = pokedex3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SuruLaye.pokedex3;
