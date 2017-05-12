@@ -11,16 +11,22 @@ import AVFoundation
 
 class MainPokedexVC: UIViewController {
     
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
     
     var pokemonArray = [Pokemon]()
+    var filteredPokemonArray = [Pokemon]()
+    var inSearchMode = false
     var musicPlayer: AVAudioPlayer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         collectionView.delegate = self
         collectionView.dataSource = self
+        searchBar.delegate = self
+        searchBar.returnKeyType = .done
         
         parsePokemonCSV()
         initAudio()
@@ -44,10 +50,12 @@ class MainPokedexVC: UIViewController {
         let path = Bundle.main.path(forResource: "pokemon", ofType: "csv")
         
         do {
+            
             let csv = try CSV(contentsOfURL: path!)
             let rows = csv.rows
             
             for row in rows {
+                
                 let pokeId = Int(row["id"]!)!
                 let name = row["identifier"]!
                 
@@ -62,14 +70,21 @@ class MainPokedexVC: UIViewController {
     }
 
     @IBAction func musicBtnPressed(_ sender: UIButton) {
+        
         if musicPlayer.isPlaying {
+            
             musicPlayer.pause()
             sender.alpha = 0.3
             
         } else {
+            
             musicPlayer.play()
             sender.alpha = 1.0
         }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 
 
@@ -85,12 +100,23 @@ extension MainPokedexVC: UICollectionViewDataSource {
         
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PokeCell", for: indexPath) as? PokeCell {
             
-            let pokemon = pokemonArray[indexPath.row]
+            let pokemon: Pokemon!
+            
+            if inSearchMode {
+                
+                pokemon = filteredPokemonArray[indexPath.row]
+                cell.configureCell(pokemon: pokemon)
+                
+            } else  {
+                
+                pokemon = pokemonArray[indexPath.row]
+                cell.configureCell(pokemon: pokemon)
+            }
             
             
-            cell.configureCell(pokemon: pokemon)
             
             return cell
+            
         } else {
             
             return UICollectionViewCell()
@@ -102,6 +128,12 @@ extension MainPokedexVC: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    
+        if inSearchMode {
+            
+            return filteredPokemonArray.count
+        }
+         
         return pokemonArray.count
     }
     
@@ -118,4 +150,32 @@ extension MainPokedexVC: UICollectionViewDataSource {
 
 extension MainPokedexVC: UICollectionViewDelegateFlowLayout {
     
+}
+
+extension MainPokedexVC: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        if searchBar.text == nil || searchBar.text == "" {
+            inSearchMode = false
+            collectionView.reloadData()
+            view.endEditing(true)
+            
+        } else {
+            
+            inSearchMode = true
+            let lower = searchBar.text!.lowercased()
+            
+            filteredPokemonArray = pokemonArray.filter({$0.name.range(of: lower) != nil})
+            collectionView.reloadData()
+            //$0 is a place holder for each item in the array. ie, taking the name if each pokemon object and checking of the text from searchbar is contained in that name
+            
+        }
+        
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        view.endEditing(true)
+        
+    }
 }
