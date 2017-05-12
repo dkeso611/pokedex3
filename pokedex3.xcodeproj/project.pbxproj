@@ -111,7 +111,7 @@
 				DE9391D51EC5210900EE3F85 /* Model */,
 				DE9391D81EC52BC500EE3F85 /* View */,
 				DE9391A51EC5029300EE3F85 /* AppDelegate.swift */,
-				DE9391A71EC5029300EE3F85 /* MainPokedexVC.swift */,
+				DEB57ACF1EC573C00057954F /* Controller */,
 				DE9391A91EC5029300EE3F85 /* Main.storyboard */,
 				DE9391AC1EC5029300EE3F85 /* Assets.xcassets */,
 				DE9391AE1EC5029300EE3F85 /* LaunchScreen.storyboard */,
@@ -162,6 +162,14 @@
 				DEB57ACA1EC5455E0057954F /* csv.swift */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		DEB57ACF1EC573C00057954F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE9391A71EC5029300EE3F85 /* MainPokedexVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

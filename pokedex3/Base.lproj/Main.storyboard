@@ -49,12 +49,12 @@
                                     <constraint firstItem="6nY-Hr-2RJ" firstAttribute="top" secondItem="qvT-1X-ber" secondAttribute="top" constant="8" id="kSQ-0X-7GT"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="xY3-am-0z5">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="xY3-am-0z5">
                                 <rect key="frame" x="0.0" y="85" width="375" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="hDC-pY-Pho"/>
                                 </constraints>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </searchBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokemonbg2" translatesAutoresizingMaskIntoConstraints="NO" id="kOx-4Y-a2M">
                                 <rect key="frame" x="0.0" y="130" width="375" height="537"/>
@@ -76,13 +76,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="U6K-qp-af6">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="U6K-qp-af6">
                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="80"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="80" id="HGD-MO-XRw"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charmander" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s74-jX-97c">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charmander" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s74-jX-97c">
                                                     <rect key="frame" x="0.0" y="80" width="100" height="20"/>
                                                     <color key="backgroundColor" red="1" green="0.1140679253" blue="0.14895290799999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
@@ -129,6 +129,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="3KF-gl-qnw" id="esH-1M-FBr"/>
+                        <outlet property="searchBar" destination="xY3-am-0z5" id="xtB-uz-JF2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
