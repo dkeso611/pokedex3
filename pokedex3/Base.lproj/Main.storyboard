@@ -25,15 +25,27 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="65"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokedexLogo" translatesAutoresizingMaskIntoConstraints="NO" id="6nY-Hr-2RJ">
-                                        <rect key="frame" x="8" y="8" width="359" height="49"/>
+                                        <rect key="frame" x="62.5" y="8" width="250" height="49"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmE-cu-0fQ">
+                                        <rect key="frame" x="342" y="32" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="vND-rm-cz7"/>
+                                            <constraint firstAttribute="height" constant="25" id="xxN-bY-LF8"/>
+                                        </constraints>
+                                        <state key="normal" image="musicIcon"/>
+                                        <connections>
+                                            <action selector="musicBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lzy-Cn-r4k"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.1140679253" blue="0.14895290799999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="6nY-Hr-2RJ" secondAttribute="bottom" constant="8" id="6jH-AV-Se1"/>
                                     <constraint firstAttribute="height" constant="65" id="Cdw-Mj-AYp"/>
-                                    <constraint firstAttribute="trailing" secondItem="6nY-Hr-2RJ" secondAttribute="trailing" constant="8" id="PAJ-Ie-Kha"/>
-                                    <constraint firstItem="6nY-Hr-2RJ" firstAttribute="leading" secondItem="qvT-1X-ber" secondAttribute="leading" constant="8" id="QOP-UR-a2O"/>
+                                    <constraint firstAttribute="bottom" secondItem="KmE-cu-0fQ" secondAttribute="bottom" constant="8" id="X5M-d0-cBq"/>
+                                    <constraint firstItem="6nY-Hr-2RJ" firstAttribute="centerX" secondItem="qvT-1X-ber" secondAttribute="centerX" id="ckN-9c-RrL"/>
+                                    <constraint firstAttribute="trailing" secondItem="KmE-cu-0fQ" secondAttribute="trailing" constant="8" id="ctr-o7-Xx4"/>
                                     <constraint firstItem="6nY-Hr-2RJ" firstAttribute="top" secondItem="qvT-1X-ber" secondAttribute="top" constant="8" id="kSQ-0X-7GT"/>
                                 </constraints>
                             </view>
@@ -121,11 +133,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+            <point key="canvasLocation" x="52" y="71.514242878560722"/>
         </scene>
     </scenes>
     <resources>
         <image name="4" width="120" height="120"/>
+        <image name="musicIcon" width="100" height="100"/>
         <image name="pokedexLogo" width="250" height="90"/>
         <image name="pokemonbg2" width="1920" height="1080"/>
     </resources>
