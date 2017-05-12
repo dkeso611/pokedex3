@@ -20,7 +20,6 @@ class PokeCell: UICollectionViewCell {
     }
     
     
-    
     func configureCell(pokemon: Pokemon) {
         self.pokemon = pokemon
         

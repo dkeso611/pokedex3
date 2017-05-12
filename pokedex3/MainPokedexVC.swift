@@ -11,6 +11,8 @@ import UIKit
 class MainPokedexVC: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    var pokemonArray = [Pokemon]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,9 +20,32 @@ class MainPokedexVC: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
+        parsePokemonCSV()
+        
         let charmander = Pokemon(name: "Charmander", pokedexId: 4)
         print(charmander.name)
         
+    }
+    
+    func parsePokemonCSV() {
+        let path = Bundle.main.path(forResource: "pokemon", ofType: "csv")
+        
+        do {
+            let csv = try CSV(contentsOfURL: path!)
+            let rows = csv.rows
+            
+            for row in rows {
+                let pokeId = Int(row["id"]!)!
+                let name = row["identifier"]!
+                
+                let pokemon =  Pokemon(name: name, pokedexId: pokeId)
+                pokemonArray.append(pokemon)
+            }
+            
+        } catch let err as NSError {
+            
+            print(err.debugDescription)
+        }
     }
 
 
@@ -36,6 +61,12 @@ extension MainPokedexVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PokeCell", for: indexPath) as? PokeCell {
+            
+            let pokemon = pokemonArray[indexPath.row]
+            
+            
+            cell.configureCell(pokemon: pokemon)
+            
             return cell
         } else {
             
@@ -48,7 +79,7 @@ extension MainPokedexVC: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+        return pokemonArray.count
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
