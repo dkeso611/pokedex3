@@ -60,6 +60,7 @@ class MainPokedexVC: UIViewController {
                 let name = row["identifier"]!
                 
                 let pokemon =  Pokemon(name: name, pokedexId: pokeId)
+                
                 pokemonArray.append(pokemon)
             }
             
@@ -85,6 +86,16 @@ class MainPokedexVC: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetailVC" {
+            if let detailVC = segue.destination as? DetailVC {
+                if let pokemon = sender as? Pokemon {
+                    detailVC.pokemon = pokemon
+                }
+            }
+        }
     }
 
 
@@ -124,6 +135,18 @@ extension MainPokedexVC: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        var pokemon: Pokemon!
+        
+        if inSearchMode {
+            
+            pokemon = filteredPokemonArray[indexPath.row]
+        } else {
+            
+            pokemon = pokemonArray[indexPath.row]
+        }
+        
+        performSegue(withIdentifier: "showDetailVC", sender: pokemon)
         
     }
     

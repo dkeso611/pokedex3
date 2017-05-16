@@ -19,6 +19,7 @@
 		DE9391DA1EC52C5600EE3F85 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9391D91EC52C5600EE3F85 /* PokeCell.swift */; };
 		DEB57ACB1EC5455E0057954F /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB57ACA1EC5455E0057954F /* csv.swift */; };
 		DEB57ACE1EC565280057954F /* pokeMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DEB57ACD1EC565280057954F /* pokeMusic.mp3 */; };
+		DEBFE3CC1EC6449800A38861 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFE3CB1EC6449800A38861 /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		DE9391D91EC52C5600EE3F85 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 		DEB57ACA1EC5455E0057954F /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		DEB57ACD1EC565280057954F /* pokeMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pokeMusic.mp3; sourceTree = "<group>"; };
+		DEBFE3CB1EC6449800A38861 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				DE9391A71EC5029300EE3F85 /* MainPokedexVC.swift */,
+				DEBFE3CB1EC6449800A38861 /* DetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				DE9391A81EC5029300EE3F85 /* MainPokedexVC.swift in Sources */,
 				DE9391A61EC5029300EE3F85 /* AppDelegate.swift in Sources */,
 				DEB57ACB1EC5455E0057954F /* csv.swift in Sources */,
+				DEBFE3CC1EC6449800A38861 /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
