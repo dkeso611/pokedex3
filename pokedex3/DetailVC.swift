@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class DetailVC: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
@@ -30,6 +31,21 @@ class DetailVC: UIViewController {
         
         nameLabel.text = pokemon.name.capitalized
         pokeImageView.image = UIImage(named: "\(pokemon.pokedexId)")
+        
+        pokemon.downloadPokemonDetails {
+            //Will only be called after network call is complete
+            self.updateUI()
+        }
+    }
+    
+    func updateUI() {
+        
+        pokeIdLabel.text = "\(pokemon.pokedexId)"
+        attackLabel.text = pokemon.attack
+        defenseLabel.text = pokemon.defense
+        heightLabel.text = pokemon.height
+        weightLabel.text = pokemon.weight
+        
     }
 
     @IBAction func backButtonPressed(_ sender: Any) {

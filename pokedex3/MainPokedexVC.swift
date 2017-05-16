@@ -29,10 +29,12 @@ class MainPokedexVC: UIViewController {
         searchBar.returnKeyType = .done
         
         parsePokemonCSV()
-        initAudio()
+//        initAudio()
+        
     }
     
     func initAudio() {
+        
         let path = Bundle.main.path(forResource: "pokeMusic", ofType: "mp3")!
         
         do {
@@ -47,6 +49,7 @@ class MainPokedexVC: UIViewController {
     }
     
     func parsePokemonCSV() {
+        
         let path = Bundle.main.path(forResource: "pokemon", ofType: "csv")
         
         do {
@@ -89,6 +92,7 @@ class MainPokedexVC: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         if segue.identifier == "showDetailVC" {
             if let detailVC = segue.destination as? DetailVC {
                 if let pokemon = sender as? Pokemon {
@@ -141,6 +145,7 @@ extension MainPokedexVC: UICollectionViewDataSource {
         if inSearchMode {
             
             pokemon = filteredPokemonArray[indexPath.row]
+            
         } else {
             
             pokemon = pokemonArray[indexPath.row]

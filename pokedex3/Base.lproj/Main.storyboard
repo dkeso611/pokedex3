@@ -244,7 +244,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="23.333333333333314"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ruw-xY-g5W">
-                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="23.333333333333314"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="56.333333333333329" height="23.333333333333314"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zu4-ks-OTv">
                                                                 <rect key="frame" x="0.0" y="0.0" width="42.333333333333336" height="23.333333333333314"/>
@@ -252,8 +252,8 @@
                                                                 <color key="textColor" red="1" green="0.1140679253" blue="0.14895290799999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fire/Flying" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mv-hS-m3C">
-                                                                <rect key="frame" x="52.333333333333321" y="0.0" width="77.666666666666686" height="23.333333333333314"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mv-hS-m3C">
+                                                                <rect key="frame" x="52.333333333333329" y="0.0" width="4" height="23.333333333333314"/>
                                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
                                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
@@ -261,7 +261,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HPc-4r-NXF">
-                                                        <rect key="frame" x="266" y="0.0" width="108" height="23.333333333333314"/>
+                                                        <rect key="frame" x="286" y="0.0" width="88" height="23.333333333333314"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Defense:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kw-od-TVX">
                                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="23.333333333333314"/>
@@ -269,8 +269,8 @@
                                                                 <color key="textColor" red="1" green="0.1140679253" blue="0.14895290799999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KlZ-uq-FSb">
-                                                                <rect key="frame" x="80" y="0.0" width="28" height="23.333333333333314"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KlZ-uq-FSb">
+                                                                <rect key="frame" x="80" y="0.0" width="8" height="23.333333333333314"/>
                                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
                                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
@@ -289,7 +289,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="23.333333333333371"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IcX-Ni-18i">
-                                                                <rect key="frame" x="0.0" y="0.0" width="96.333333333333329" height="23.333333333333371"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="78.666666666666671" height="23.333333333333371"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSa-UE-SHR">
                                                                         <rect key="frame" x="0.0" y="0.0" width="61.666666666666671" height="23.333333333333371"/>
@@ -297,8 +297,8 @@
                                                                         <color key="textColor" red="1" green="0.1140679253" blue="0.14895290799999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="175" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POU-T9-HZR">
-                                                                        <rect key="frame" x="71.666666666666671" y="0.0" width="24.666666666666657" height="23.333333333333371"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POU-T9-HZR">
+                                                                        <rect key="frame" x="71.666666666666671" y="0.0" width="7" height="23.333333333333371"/>
                                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <nil key="highlightedColor"/>
@@ -306,16 +306,16 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bRR-iV-y4r">
-                                                                <rect key="frame" x="263" y="0.0" width="111" height="23.333333333333371"/>
+                                                                <rect key="frame" x="267.66666666666674" y="0.0" width="106.33333333333331" height="23.333333333333371"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qr2-Pz-nWd">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="92.666666666666686" height="23.333333333333371"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="92.666666666666629" height="23.333333333333371"/>
                                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                                         <color key="textColor" red="1" green="0.1140679253" blue="0.14895290799999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0E-ER-So5">
-                                                                        <rect key="frame" x="102.66666666666669" y="0.0" width="8.3333333333333144" height="23.333333333333371"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0E-ER-So5">
+                                                                        <rect key="frame" x="102.66666666666663" y="0.0" width="3.6666666666666856" height="23.333333333333371"/>
                                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <nil key="highlightedColor"/>
@@ -328,7 +328,7 @@
                                                         <rect key="frame" x="0.0" y="33.333333333333371" width="374" height="23.333333333333314"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="leq-NP-dhX">
-                                                                <rect key="frame" x="0.0" y="0.0" width="96" height="23.333333333333314"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="78.333333333333329" height="23.333333333333314"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJ4-LF-p6S">
                                                                         <rect key="frame" x="0.0" y="0.0" width="61.333333333333329" height="23.333333333333314"/>
@@ -336,8 +336,8 @@
                                                                         <color key="textColor" red="1" green="0.1140679253" blue="0.14895290799999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="350" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkJ-5f-TFE">
-                                                                        <rect key="frame" x="71.333333333333314" y="0.0" width="24.666666666666671" height="23.333333333333314"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkJ-5f-TFE">
+                                                                        <rect key="frame" x="71.333333333333329" y="0.0" width="7" height="23.333333333333314"/>
                                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <nil key="highlightedColor"/>
@@ -345,7 +345,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="17w-M4-KYS">
-                                                                <rect key="frame" x="244.33333333333329" y="0.0" width="129.66666666666671" height="23.333333333333314"/>
+                                                                <rect key="frame" x="265.33333333333326" y="0.0" width="108.66666666666669" height="23.333333333333314"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Base Attack:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6As-JB-qRH">
                                                                         <rect key="frame" x="0.0" y="0.0" width="95" height="23.333333333333314"/>
@@ -353,8 +353,8 @@
                                                                         <color key="textColor" red="1" green="0.1140679253" blue="0.14895290799999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EeU-EH-BFM">
-                                                                        <rect key="frame" x="105" y="0.0" width="24.666666666666686" height="23.333333333333314"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EeU-EH-BFM">
+                                                                        <rect key="frame" x="105" y="0.0" width="3.6666666666666856" height="23.333333333333314"/>
                                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <nil key="highlightedColor"/>
