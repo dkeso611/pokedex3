@@ -31,6 +31,8 @@ class DetailVC: UIViewController {
         
         nameLabel.text = pokemon.name.capitalized
         pokeImageView.image = UIImage(named: "\(pokemon.pokedexId)")
+        pokeIdLabel.text = "\(pokemon.pokedexId)"
+        currentEvoImageView.image = UIImage(named: "\(pokemon.pokedexId)")
         
         pokemon.downloadPokemonDetails {
             //Will only be called after network call is complete
@@ -40,11 +42,27 @@ class DetailVC: UIViewController {
     
     func updateUI() {
         
-        pokeIdLabel.text = "\(pokemon.pokedexId)"
         attackLabel.text = pokemon.attack
         defenseLabel.text = pokemon.defense
         heightLabel.text = pokemon.height
         weightLabel.text = pokemon.weight
+        typeLabel.text = pokemon.type
+        descriptionLabel.text = pokemon.description
+//        nextEvoImageView.image = UIImage(named: "\(pokemon.nextEvoId)")
+
+        
+        if pokemon.nextEvoName == "" {
+            evoLabel.text = "Final Evolution"
+            nextEvoImageView.isHidden = true
+            
+        } else {
+            nextEvoImageView.image = UIImage(named: "\(pokemon.nextEvoId)")
+            nextEvoImageView.isHidden = false
+
+            evoLabel.text = "Next Evolution: \(pokemon.nextEvoName), Level \(pokemon.nextEvoLvl)"
+            
+
+        }
         
     }
 

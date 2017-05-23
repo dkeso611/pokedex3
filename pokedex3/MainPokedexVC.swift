@@ -29,7 +29,7 @@ class MainPokedexVC: UIViewController {
         searchBar.returnKeyType = .done
         
         parsePokemonCSV()
-//        initAudio()
+        initAudio()
         
     }
     
