@@ -407,18 +407,21 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CHq-XS-D7o">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="C9M-fb-tpO"/>
-                                            <constraint firstAttribute="width" constant="120" id="uAJ-st-IAa"/>
+                                            <constraint firstAttribute="height" constant="120" id="urz-kU-dT1"/>
+                                            <constraint firstAttribute="width" constant="120" id="xF2-kC-jXe"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="drQ-ao-Mdb">
                                         <rect key="frame" x="150" y="0.0" width="120" height="120"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="MHv-7x-5Ys"/>
-                                            <constraint firstAttribute="height" constant="120" id="Zi1-jx-oO5"/>
+                                            <constraint firstAttribute="width" constant="120" id="SMU-v9-WM6"/>
+                                            <constraint firstAttribute="height" constant="120" id="hgf-Cb-CA5"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="HRu-aR-QUK"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -428,11 +431,11 @@
                             <constraint firstItem="wry-67-xVw" firstAttribute="leading" secondItem="cLf-vF-iFe" secondAttribute="leading" id="CTO-cz-UNz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VLE-vr-X6i" secondAttribute="trailing" id="ClD-Sa-qTr"/>
                             <constraint firstItem="8GB-23-BVR" firstAttribute="top" secondItem="KTB-ph-odr" secondAttribute="bottom" constant="20" id="ML3-42-BCP"/>
-                            <constraint firstItem="8GB-23-BVR" firstAttribute="centerX" secondItem="cLf-vF-iFe" secondAttribute="centerX" id="OQ3-km-mj8"/>
                             <constraint firstAttribute="trailing" secondItem="wry-67-xVw" secondAttribute="trailing" id="Q6o-VP-8w8"/>
                             <constraint firstItem="p3k-CY-vm7" firstAttribute="top" secondItem="wry-67-xVw" secondAttribute="bottom" id="Ubt-cv-gdc"/>
                             <constraint firstAttribute="trailing" secondItem="KTB-ph-odr" secondAttribute="trailing" id="WIV-Ke-03H"/>
                             <constraint firstItem="KTB-ph-odr" firstAttribute="leading" secondItem="cLf-vF-iFe" secondAttribute="leading" id="X0D-sG-j2J"/>
+                            <constraint firstItem="8GB-23-BVR" firstAttribute="centerX" secondItem="cLf-vF-iFe" secondAttribute="centerX" id="YvI-7J-5RW"/>
                             <constraint firstItem="VLE-vr-X6i" firstAttribute="top" secondItem="wry-67-xVw" secondAttribute="bottom" constant="10" id="ddf-Xh-E1q"/>
                             <constraint firstAttribute="trailing" secondItem="p3k-CY-vm7" secondAttribute="trailing" id="nzz-2k-bed"/>
                             <constraint firstItem="p3k-CY-vm7" firstAttribute="leading" secondItem="cLf-vF-iFe" secondAttribute="leading" id="oLq-k0-l18"/>

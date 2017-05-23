@@ -210,6 +210,7 @@ class Pokemon {
                     }
                     
                     if let uri = result["evolutions"][0]["resource_uri"].string {
+                        
                         let newString = uri.replacingOccurrences(of: "/api/v1/pokemon/", with: "")
                         let nextEvoId = newString.replacingOccurrences(of: "/", with: "")
                         self._nextEvoId = nextEvoId
